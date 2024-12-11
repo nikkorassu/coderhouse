@@ -1,4 +1,4 @@
-$primary-color:green;
+@import "variables";
 
 h1 {
     color: $primary-color;
@@ -10,6 +10,6 @@ h1 {
 
 header {
     nav {
-        background-color: bisque;
+        background-color: rgb(114, 84, 47);
     }
 }
