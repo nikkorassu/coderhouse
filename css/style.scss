@@ -1,6 +1,8 @@
 
 @import "variables";
 @import "typography";
+@import 'animate.css';
+
 
 // Reset CSS
 * {
@@ -20,8 +22,8 @@ header {
 }
 
 footer {
-    background-color: black;
-    margin: 0;
+    background: hsla(230, 100%, 23%, 1);
+    background: radial-gradient(circle, hsla(230, 100%, 23%, 1) 0%, hsla(223, 100%, 3%, 1) 100%);
     padding: 3%;
     width: 100%;
 }
@@ -110,17 +112,17 @@ nav:hover {
 
 
 @media (max-width: $breakpoint-md) {
-        img {
-            width: 75%;
-        }
-        .icon {
-            width: 100px;
-            height: auto;
-        }
-        .grid-media{
-            grid-template-columns: 1fr;
-        }
+    img {
+        width: 75%;
     }
+    .icon {
+        width: 100px;
+        height: auto;
+    }
+    .grid-media{
+            grid-template-columns: 1fr;
+    }
+}
 
 .icon {
     width: 150px;
@@ -185,6 +187,8 @@ nav a:hover{
 
 
 .whatsapp{
+    display: inline-block;
+    margin: 0 0.5rem;
     position:fixed;
     bottom: 0px;
     right: 10px;
@@ -193,6 +197,7 @@ nav a:hover{
 }
 
 .whatsapp:hover{
-    border: solid black 1px;
+    animation: bounce;
+    animation-duration: 2s;
 }
 
