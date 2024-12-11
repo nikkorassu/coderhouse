@@ -1,11 +1,219 @@
-h1 {
-  color: green;
-  text-transform: uppercase;
-  text-align: center;
+@font-face {
+  font-family: "delaney";
+  src: url("/fonts/DELANEY.TTF");
+}
+h1, h2, h3 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
   font-weight: 400;
 }
 
-header nav {
-  background-color: bisque;
+h1 {
+  color: rgb(0, 41, 128);
+  text-align: center;
 }
+
+h2 {
+  color: rgb(61, 61, 61);
+}
+
+h3 {
+  font-weight: 200;
+}
+
+p, li {
+  color: black;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+* {
+  padding: 10px;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/img/bkg.jpg");
+}
+
+header {
+  display: flex;
+  border-bottom: solid 2px rgb(173, 173, 173);
+  background-color: white;
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+  margin: 0;
+  padding: 3%;
+  width: 100%;
+}
+
+section {
+  background-color: whitesmoke;
+}
+
+article {
+  background-color: white;
+  margin: 20px;
+  padding: 4%;
+}
+
+.primary-button {
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  background-color: blue;
+}
+
+.secondary-button {
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  background-color: gray;
+}
+
+.navigator {
+  display: flex;
+  align-content: center;
+}
+
+.logo {
+  width: 350px;
+}
+@media (max-width: 800px) {
+  .logo {
+    width: 50%;
+  }
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 10px;
+  color: black;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 300;
+  transition: color 0.3s, font-size 0.3s;
+}
+
+nav:hover {
+  font-size: 12px;
+  color: darkred;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px;
+}
+@media (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-item {
+  background-color: #e4e4e4;
+  border: solid 1px #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-item:hover {
+  background-color: #cccccc;
+  border: dotted 1px #1f1f1f;
+}
+
+.grid-media {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+@media (max-width: 800px) {
+  img {
+    width: 75%;
+  }
+  .icon {
+    width: 100px;
+    height: auto;
+  }
+  .grid-media {
+    grid-template-columns: 1fr;
+  }
+}
+.icon {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: rotate(180deg);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  border-bottom: solid rgb(173, 173, 173) 2px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
+/*Menu*/
+.navigator {
+  display: block;
+  align-content: center;
+}
+
+.logo {
+  width: 350px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 10px;
+  color: black;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+nav a:hover {
+  font-size: 12px;
+  color: darkred;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  width: 90px;
+  height: auto;
+}
+
+.whatsapp:hover {
+  border: solid black 1px;
+}
+
+/*# sourceMappingURL=style.css.map */

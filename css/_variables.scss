@@ -1,16 +1,12 @@
-$primary-color:rgb(0, 41, 128);
+$primary-color: rgb(0, 41, 128);
+$secondary-color: gray;
+$bg-color: white;
+$text-color: black;
+
+$padding-base: 10px;
+$border-radius-base: 5px;
+$grid-gap: 2px;
 
 $theme: light;
 
-.button {
-@if $theme == light {
-    background-color: white;
-    color: black;
-} @else if $theme == dark {
-    background-color: black;
-    color: white;
-} @else {
-    background-color: gray;
-    color: white;
-}
-}
+$breakpoint-md: 800px;

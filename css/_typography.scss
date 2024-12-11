@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'delaney';
+    src: url('/fonts/DELANEY.TTF');
+}
+
+h1, h2, h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h1 {
+    color: $primary-color;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(61, 61, 61);
+}
+
+h3 {
+    font-weight: 200;
+}
+
+p, li {
+    color: $text-color;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
