@@ -1,1 +1,16 @@
 $primary-color:rgb(0, 41, 128);
+
+$theme: light;
+
+.button {
+@if $theme == light {
+    background-color: white;
+    color: black;
+} @else if $theme == dark {
+    background-color: black;
+    color: white;
+} @else {
+    background-color: gray;
+    color: white;
+}
+}

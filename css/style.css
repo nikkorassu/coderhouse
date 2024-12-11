@@ -1,5 +1,5 @@
 h1 {
-  color: rgb(0, 41, 128);
+  color: green;
   text-transform: uppercase;
   text-align: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -7,5 +7,5 @@ h1 {
 }
 
 header nav {
-  background-color: rgb(114, 84, 47);
-}/*# sourceMappingURL=style.css.map */
+  background-color: bisque;
+}

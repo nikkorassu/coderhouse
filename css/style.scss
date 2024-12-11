@@ -1,5 +1,16 @@
 @import "variables";
 
+$padding:30px;
+$border-radius: 5px;
+$bg-color: white;
+
+/*Reset CSS*/
+* {
+    padding: 10px;
+    margin: 0%;
+    box-sizing:border-box;
+}
+
 h1 {
     color: $primary-color;
     text-transform: uppercase;
@@ -12,4 +23,21 @@ header {
     nav {
         background-color: rgb(114, 84, 47);
     }
+}
+
+// Definición de un mixin con parámetros
+@mixin button-styles($padding, $border-radius, $bg-color) {
+    padding: $padding;
+    border-radius: $border-radius;
+    color: black;
+    background-color: $bg-color;
+}
+
+// Uso del mixin en clases
+.primary-button {
+    @include button-styles(10px 20px, 5px, blue);
+}
+
+.secondary-button {
+    @include button-styles(10px 20px, 5px, gray);
 }
